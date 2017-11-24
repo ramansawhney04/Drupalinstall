@@ -31,6 +31,9 @@ content => '<?php phpinfo(); ?>',
 package {'libapache2-mod-php5':
 ensure => present,
 }
+package {'phpmyadmin':
+ensure => present,
+}
 ->
 package {'libapache2-mod-auth-mysql':
 ensure => present,
